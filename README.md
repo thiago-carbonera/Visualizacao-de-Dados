@@ -1,6 +1,11 @@
 # Visualização de Dados - Análise de Crimes em Chicago
 
-Análise e visualização interativa dos 15 tipos de crimes mais frequentes em Chicago usando Python, Pandas e Plotly.
+Análise e visualização interativa das seguintes perguntas de pesquisa:
+- Quais são os tipos de crimes mais frequentes?
+- Como a quantidade de crimes varia ao longo do tempo (anos, meses e horários)?
+- Quais regiões apresentam maior incidência de crimes?
+- Existe relação entre o tipo de crime e a ocorrência de prisão?
+
 
 ## Requisitos
 
@@ -48,23 +53,24 @@ Visualização de Dados/
 jupyter notebook scripts/analise_crimes.ipynb
 ```
 
-2. Execute todas as células para gerar a visualização
+2. Execute todas as células para gerar as visualizações
 
-3. O gráfico interativo será exibido e salvo automaticamente em `outputs/top15_crimes.png`
+3. Os gráficos interativos serão exibidos e salvos automaticamente em `outputs/`
 
 ## O que o Script Faz
 
 - **Leitura**: Carrega dados do arquivo CSV
-- **Processamento**: Converte datas e conta frequências de crimes
-- **Visualização**: Cria gráfico de barras horizontal dos 15 crimes mais frequentes
-- **Exportação**: Salva o resultado como imagem PNG
+- **Processamento**: Efetua pré processamentos
+- **Visualização**: Gera as visualizações
+- **Exportação**: Salva os resultado html em `outputs/`
 
 ## Saída
 
-Um gráfico interativo mostrando os tipos de crimes mais comuns em Chicago, com:
-- Barras horizontais coloridas (escala de vermelhos)
-- Contagem de ocorrências
-- Ordenação decrescente
+Gera quatro visualizações interativas: 
+- Visualização de barras horizontais Animado (Bar Chart Race)
+- Visualização de mapa de calor espacial (Geographic Heatmap) 
+- Visualização de diagrama de sankey (Sankey Diagram)
+- Visualização de uma matriz de densidade temporal (Heatmap Bidimensional)
 
 ## Notas
 
